@@ -16,17 +16,17 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_privacy_policy);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.notifications, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id =item.getItemId();
-        if(id == R.id.action_clear_notifications){
-            Toast.makeText(getApplicationContext(),"all notification cleared !",Toast.LENGTH_LONG).show();
-        }
-        return true;
-    }
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.notifications, menu);
+//        return true;
+//    }
+//
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id =item.getItemId();
+//        if(id == R.id.action_clear_notifications){
+//            Toast.makeText(getApplicationContext(),"all notification cleared !",Toast.LENGTH_LONG).show();
+//        }
+//        return true;
+//    }
 }
