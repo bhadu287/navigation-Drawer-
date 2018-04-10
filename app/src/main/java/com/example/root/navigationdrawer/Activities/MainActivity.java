@@ -28,8 +28,12 @@ import com.example.root.navigationdrawer.Fragments.NotificationFragment;
 import com.example.root.navigationdrawer.Fragments.PhotosFragment;
 import com.example.root.navigationdrawer.Fragments.SettingFragment;
 import com.example.root.navigationdrawer.Others.CircleTransform;
+import com.example.root.navigationdrawer.Others.Controller;
+import com.example.root.navigationdrawer.Others.Item;
 import com.example.root.navigationdrawer.R;
 import com.squareup.picasso.Picasso;
+
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
     private FloatingActionButton fab;
-
     // urls to load navigation header background image
     // and profile image
     private static final String urlNavHeaderBg = "https://api.androidhive.info/images/nav-menu-header-bg.jpg";
@@ -214,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
                 SettingFragment settingsFragment = new SettingFragment();
                 return settingsFragment;
             default:
-                return new HomeFragment();
+                return (new HomeFragment());
         }
     }
 
@@ -386,4 +389,6 @@ public class MainActivity extends AppCompatActivity {
         else
             fab.hide();
     }
+
+
 }

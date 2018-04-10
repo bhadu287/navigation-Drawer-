@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.AboutUsActivity" />
-        <activity android:name=".Activities.PrivacyPolicyActivity"></activity>
+        <activity android:name=".Activities.PrivacyPolicyActivity">
+
+        </activity>
     </application>
 
 </manifest>
